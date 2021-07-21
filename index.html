@@ -1,163 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-<link rel="stylesheet" href="style.css" media="all">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Blogr</title>
-</head>
-<body>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<link rel="stylesheet" href="style.css" media="all">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-<div class="wrapper flex-center">
-  <div class="container">
+	<title>Blogr</title>
+  </head>
+  <body>
 
-
+	<div class="wrapper flex-center">
+	  <div class="container">
 
 
-	  <div class="nav-wrapper">
-		<div class="main-nav flex">
-		  <div class="logo">
-			<div class="img"><img src="./images/logo.svg" alt=""></div>
-			<!--  <span>LOGO</span> -->
+		<p id="main" tabindex="-1">Main Content</p>
+
+
+		<div class="nav-wrapper">
+		  <div class="main-nav flex">
+			<div class="logo">
+			  <div class="img"><img src="./images/logo.svg" alt=""></div>
+			  <!--  <span>LOGO</span> -->
+			</div>
+
+			<nav aria-label="main">
+			  <ul class="links" role="menubar">
+				<li role="menuitem"><a href="">Integrations</a></li>
+				<li role="menuitem"><a href="">Pricing</a></li>
+				<li role="menuitem"><a href="">Blog</a></li>
+				<li role="menuitem"><a href="">About</a></li>
+				<li role="menuitem"><a href="">Sign In</a></li>
+			  </ul>
+
+			</nav>
 		  </div>
 
-		  <nav aria-label="main">
-			<ul class="links" role="menubar">
-			  <li role="menuitem"><a href="">Integrations</a></li>
-			  <li role="menuitem"><a href="">Pricing</a></li>
-			  <li role="menuitem"><a href="">Blog</a></li>
-			  <li role="menuitem"><a href="">About</a></li>
-			  <li role="menuitem"><a href="">Sign In</a></li>
-			</ul>
+		  <div class="m-nav">
+			<input type="checkbox" id="menu" class="m-menu">
+			<label for="menu" class="hamburger">&#9776;</label>
+			<div class="bg-nav"></div>
+			<a href="" class="cross-mark">&#0215;</a>
+			<nav aria-label="main">
+			  <ul class="m-links" role="menubar">
+				<li role="menuitem"><a href="">Services</a></li>
+				<li role="menuitem"><a href="">About</a></li>
+				<li role="menuitem"><a href="">Projects</a></li>
+				<li role="menuitem"><a href="">Contact</a></li>
+			  </ul>
+			</nav>
+		  </div>
 
-		  </nav>
 		</div>
 
-		<div class="m-nav">
-		  <input type="checkbox" id="menu" class="m-menu">
-		  <label for="menu" class="hamburger">&#9776;</label>
-		  <div class="bg-nav"></div>
-		  <a href="" class="cross-mark">&#0215;</a>
-		  <nav aria-label="main">
-			<ul class="m-links" role="menubar">
-			  <li role="menuitem"><a href="">Services</a></li>
-			  <li role="menuitem"><a href="">About</a></li>
-			  <li role="menuitem"><a href="">Projects</a></li>
-			  <li role="menuitem"><a href="">Contact</a></li>
-			</ul>
-		  </nav>
-		</div>
 
+
+
+
+
+
+
+		<main>
+		  <h1>A modern publishing platform</h1>
+		  <p>Grow your audience and build your online brand</p>
+		  <div class="button cta"><a href="">Start for Free</a></div>
+
+		  <article>
+			<h2>Designed for the future</h2>
+			<section class="flex two">
+			  <div class="text">
+
+				<h2>Introducing an extensible editor</h2>
+				<p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+				<h2>Robust content management</h2>
+				<p>Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+
+			  </div>
+			  <div class="hero"></div>
+			</section>
+
+
+			<section>
+			  <div class="hero"></div>
+			  <div class="text">
+
+				<h2>State of the Art Infrastructure</h2>
+				<p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+
+
+			  </div>
+			</section>
+
+			<section>
+			  <div class="hero"></div>
+			  <div class="text">
+				<h3>Free, open, simple</h3>
+				<p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+				<h3>Powerful tooling</h3>
+				<p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+			  </div>
+			</section>
+
+
+
+
+
+
+
+
+
+		  </article>
+
+
+
+
+		</main>
+
+		<footer class="footer">
+		  <div class="container">
+			<div class="main-nav flex">
+			  <div class="logo">
+				<div class="img"><img src="./images/logo.svg" alt=""></div>
+				<!--  <span>LOGO</span> -->
+			  </div>
+
+			  <nav aria-label="main">
+				<ul class="links" role="menubar">
+				  <li role="menuitem"><a href="">Integrations</a></li>
+				  <li role="menuitem"><a href="">Pricing</a></li>
+				  <li role="menuitem"><a href="">Blog</a></li>
+				  <li role="menuitem"><a href="">About</a></li>
+				  <li role="menuitem"><a href="">Sign In</a></li>
+				</ul>
+
+			  </nav>
+			</div>
+
+
+
+		  </div>
+		</footer>
 	  </div>
+	</div>
 
-
-
-
-
-
-
-
-    <main></main>
-
-    <footer class="footer">
-      <div class="container"></div>
-    </footer>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
-
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </body>
 </html>
+
