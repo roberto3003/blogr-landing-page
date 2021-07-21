@@ -1,7 +1,7 @@
 :root {
   --padding: 1.5em;
   --gap: 4em;
-  --font-size: clamp(1rem, 1.25vw, 2.5rem);
+  --font-size: clamp(0.8rem, 1.25vw, 2.5rem);
   --letter-spacing: 0.3em;
   --nav-icon: 3em;
 }
@@ -65,8 +65,9 @@ header {
 }
 
 p {
-  line-height: 1.5;
+  line-height: var(--padding);
   max-width: 60em;
+  margin: var(--padding) 0;
 }
 
 nav {
