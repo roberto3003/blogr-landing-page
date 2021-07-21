@@ -24,13 +24,13 @@
 
 /* light-theme colors */
 :root {
-  --bg-color: floralwhite;
+  --bg-color: whitesmoke;
   --text: var(--black);
   --text-contrast: var(--white);
-  --theme: var(--white);
+  --theme: mistyrose;
   --medium: lavender;
   --contrast: lightsteelblue;
-  --accent: slateblue;
+  --accent: orangered;
   --white: white;
   --black: rgba(46, 49, 49, 1);
   --shadow: 0 0.25vw 1vw  0 rgba(0,0,0,0.2);
@@ -52,6 +52,9 @@ body {
   letter-spacing: var(--letter-spacing);
 } 
 
+header {
+  background-color: var(--theme);
+}
 
 p {
   line-height: 1.5;
