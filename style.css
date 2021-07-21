@@ -42,9 +42,11 @@ html {
   background-color: var(--bg-color);
 }
 
-.wrapper {
+@media print {
+  body > *:not(main), .button {
+	display: none;
+  }
 }
-
 
 body {
   min-height: 100vh;
@@ -69,6 +71,25 @@ p {
   max-width: 60em;
   margin: var(--padding) 0;
 }
+
+p a {
+  text-decoration: none;
+  text-shadow: 0.05em 0 0 #fff, -0.05em 0 0 #fff,
+  0 0.05em 0 #fff, 0 -0.05em 0 #fff,
+  0.1em 0 0 #fff, -0.1em 0 0 #fff,
+  0 0.1em 0 #fff, 0 -0.1em 0 #fff;
+  background-image: linear-gradient(to right, currentColor
+  0%, currentColor 100%);
+  background-repeat: repeat-x;
+  background-position: bottom 0.05em center;
+  background-size: 100% 0.05em;
+}
+
+p a:hover {
+  background-image: linear-gradient(to right, var(--accent)
+  0%,  var(--accent) 100%);
+}
+
 
 nav {
   justify-content: flex-end;
@@ -273,11 +294,12 @@ a:visited {
 
 .skip-main {
 position: absolute;
-left: -999px;
+top: 0;
+right: 100%;
 }
 
 .skip-main:focus {
-  left: 1em;
+  right: auto;
 }
 
 
