@@ -392,6 +392,12 @@ right: 100%;
   gap: 1em;
 }
 
+@media only screen and (max-width: 50em) {
+  .main-nav  .links  {
+	flex-direction: column;
+  }
+}
+
 .main-nav .links > * {
   display: initial;
 }
