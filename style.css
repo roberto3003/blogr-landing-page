@@ -9,7 +9,8 @@
 /* dark-theme colors */
 :root {
   --bg-color: midnightblue;
-  --text: var(--white);
+  --text:rgba(255, 255, 255, 1);
+  --text-70:rgba(255, 255, 255, 0.7);
   --text-contrast: var(--black);
   --theme: lightsteelblue;
   --contrast: rebeccapurple;
@@ -25,7 +26,8 @@
 /* light-theme colors */
 :root {
   --bg-color: whitesmoke;
-  --text: var(--black);
+  --text: rgba(46, 49, 49, 1);
+  --text-70: rgba(46, 49, 49, 0.7);
   --text-contrast: var(--white);
   --theme: mistyrose;
   --medium: lavender;
@@ -66,21 +68,34 @@ header {
   background-color: var(--theme);
 }
 
+a:visited {
+  color: inherit;
+}
+
+
 p {
   line-height: var(--padding);
   max-width: 60em;
   margin: var(--padding) 0;
 }
 
-p a  {
+p a {
+  color: var(--text);
 text-decoration: underline;
+text-decoration-thickness: from-font;
+cursor: pointer;
+}
+
+p a:visited {
+  color: var(--text-70);
 }
 
 p a:hover {
 text-decoration: underline;
+color: var(--accent);
   text-decoration-color: var(--accent);
+  text-decoration-thickness: initial;
 }
-
 
 nav {
   justify-content: flex-end;
@@ -266,10 +281,6 @@ section, .section  {
 
 a {
   text-decoration:none;
-}
-
-a:visited {
-  color: inherit;
 }
 
 .shadow {
