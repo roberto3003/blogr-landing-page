@@ -155,8 +155,27 @@ input:not(:placeholder-shown):invalid {
   margin-inline-end: auto;
 }
 
-footer .wrapper {
-  min-height: initial;
+main * + * {
+  margin-block-start: var(--line-h);
+}
+li, dt, dd, br, th, td {
+  margin-block-start: 0;
+}
+
+* + h2, * + h3 {
+	margin-block-start: var(--line-h);
+  }
+
+  main * + *:not(p) {
+margin: calc(var(--line-h)*2);
+}
+
+main, .footer {
+  margin-block-start: calc(var(--line-h)*4);
+}
+
+  footer .wrapper {
+	min-height: initial;
 }
 
 .container {
