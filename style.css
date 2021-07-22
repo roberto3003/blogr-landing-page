@@ -1,6 +1,8 @@
 :root {
+  --line-h: 1.5em;
   --padding: 1.5em;
-  --gap: 4em;
+  --gap: calc(var(--line-h)*2);
+  --radius: 1rem;
   --font-size: clamp(0.8rem, 1.25vw, 2.5rem);
   --letter-spacing: 0.3em;
   --nav-icon: 3em;
@@ -74,9 +76,9 @@ a:visited {
 
 
 p {
-  line-height: var(--padding);
+  line-height: var(--line-h);
   max-width: 60em;
-  margin: var(--padding) 0;
+  margin: var(--line-h) 0;
 }
 
 p a {
@@ -115,7 +117,7 @@ nav li:not(.button, .active):hover, .active {
 
 
 hr {
-  margin-block-end: calc(var(--padding)*3);
+  margin-block-end: calc(var(--line-h)*3);
   border:unset;
 }
 
@@ -246,12 +248,12 @@ picture {
 }
 
 section, .section  {
-  margin-block-end: calc(var(--padding)*6);
+  margin-block-end: calc(var(--line-h)*6);
 }
 
 
 .button {
-  border-radius: var(--padding);
+  border-radius: var(--radius);
   border: 0.1em  solid var(--text);
   padding: calc(var(--padding)/2);
   text-align: center;
@@ -278,7 +280,7 @@ section, .section  {
 }
 
 .radius {
-  border-radius: var(--padding);
+  border-radius: var(--radius);
   overflow: hidden;
 }
 
