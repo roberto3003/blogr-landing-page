@@ -299,7 +299,7 @@ a {
 }
 
 .img-small {
-  height: 3em;
+  height: calc(var(--line-h)*2);
 }
 
 .img-small img {
@@ -338,7 +338,7 @@ right: 100%;
 }
 
 .logo .img {
-  height: 1.75em;
+  height: var(--line-h);
 }
 
 .logo .img img {
