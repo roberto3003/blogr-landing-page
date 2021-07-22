@@ -129,7 +129,11 @@ input:not(:placeholder-shown):invalid {
 }
 
 :focus {
-  outline: 3px solid black;
+    outline: 0.12em solid currentColor;
+    padding: 0.2em;
+    font-size: 1.1em;
+    text-decoration: none;
+    box-shadow: var(--shadow);
 }
 
 .bg-image {
