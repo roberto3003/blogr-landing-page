@@ -393,7 +393,7 @@ right: 100%;
 }
 
 .main-nav .links > * {
-  display: none;
+  display: initial;
 }
 
 .m-nav {
@@ -442,6 +442,7 @@ right: 100%;
   line-height: 2;
 }
 
+/*
 @media only screen and (min-width: 1115px) {
   .main-nav  .links > * {
 	display: initial;
@@ -450,6 +451,7 @@ right: 100%;
 	display: none;
   }
 }
+*/
 
 
 
