@@ -76,7 +76,7 @@ p a  {
 text-decoration: underline;
 }
 
-p a:hover, nav a:hover {
+p a:hover {
 text-decoration: underline;
   text-decoration-color: var(--accent);
 }
@@ -86,15 +86,18 @@ nav {
   justify-content: flex-end;
 }
 
-nav .active {
-  border-inline: solid var(--accent);
+nav li {
   padding: 0.5em;
+}
+
+.active {
   font-size: 1.1em;
 }
 
-nav .active a:hover {
-  text-decoration: none;
+nav li:not(.button, .active):hover, .active {
+  border-block-end: solid var(--accent);
 }
+
 
 hr {
   margin-block-end: calc(var(--padding)*3);
