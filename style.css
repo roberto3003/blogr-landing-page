@@ -68,6 +68,7 @@ body > * {
 
 header {
   background-color: var(--theme);
+  height: calc(var(--line-h)*3);
 }
 
 a:visited {
@@ -257,7 +258,7 @@ section, .section  {
   place-items: center;
   border-radius: var(--radius);
   border: 0.1em  solid var(--text);
-  height: var(--line-h);
+  height: calc(var(--line-h)*1.5);
   padding: 0 var(--padding);
 }
 
@@ -328,7 +329,7 @@ right: 100%;
 }
 
 .main-nav {
-  height: 4em;
+  height: calc(var(--line-h)*2);
   align-items: center;
 }
 
