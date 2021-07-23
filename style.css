@@ -104,6 +104,10 @@ nav {
   justify-content: flex-end;
 }
 
+ul {
+  padding: 0;
+}
+
 nav li {
   display: grid;
   place-items: center;
@@ -210,7 +214,7 @@ main, .footer {
   margin: 0 auto;
 }
 
-.c {
+.grid {
   display: grid;
   grid-template-columns: repeat(
   auto-fill,
@@ -389,11 +393,16 @@ right: 100%;
 
 .main-nav .links {
   gap: 1em;
+  justify-content: flex-end;
 }
 
-@media only screen and (max-width: 20em) {
+@media only screen and (max-width: 25em) {
   .main-nav  .links  {
 	flex-direction: column;
+align-items: center;
+  }
+  .logo {
+	margin-inline: auto;
   }
 }
 
