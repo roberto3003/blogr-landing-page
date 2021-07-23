@@ -326,9 +326,19 @@ footer .wrapper {
   margin-inline-end: auto;
 }
 
-.c {
+.gc {
   display: grid;
   place-items: center;
+}
+
+.gac {
+  display: grid;
+  align-items: center;
+}
+
+.gjc {
+  display: grid;
+  justify-items: center;
 }
 
 .flex-center {
