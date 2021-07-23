@@ -105,6 +105,8 @@ nav {
 }
 
 nav li {
+  display: grid;
+  place-items: center;
   padding: 0.5em;
 }
 
@@ -112,7 +114,7 @@ nav li {
   font-size: 1.1em;
 }
 
-nav li:not(.button, .active):hover, .active {
+nav li:not(.logo .button, .active):hover, .active {
   border-block-end: solid var(--accent);
 }
 
@@ -208,7 +210,7 @@ main, .footer {
   margin: 0 auto;
 }
 
-.grid {
+.c {
   display: grid;
   grid-template-columns: repeat(
   auto-fill,
@@ -389,13 +391,13 @@ right: 100%;
   gap: 1em;
 }
 
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 20em) {
   .main-nav  .links  {
 	flex-direction: column;
   }
 }
 
-.main-nav .links > * {
+.main-nav .links > *:not(.logo) {
   display: initial;
 }
 
