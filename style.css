@@ -4,7 +4,7 @@
   --gap: calc(var(--line-h)*2);
   --radius: 1rem;
   --font-size: clamp(0.8rem, 1.25vw, 2.5rem);
-  --letter-spacing: 0.3em;
+  --letter-spacing: 0.25em;
   --nav-icon: 3em;
 }
 
@@ -42,106 +42,161 @@
 }
 
 
-html {
-  background-color: var(--bg-color);
-}
-
-@media print {
-  body > *:not(main), .button {
-	display: none;
+/* Box sizing rules */
+*,
+  *::before,
+  *::after {
+	box-sizing: border-box;
   }
-}
 
-body {
-  min-height: 100vh;
-  margin:0;
-  color: var(--text);
-  font-family: system-ui, sans-serif;
-  font-size: var(--font-size);
-  letter-spacing: var(--letter-spacing);
-} 
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+	margin: 0;
+	line-height: var(--line-h);
+  }
 
-body > * {
-  width: 100%;
-}
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role='list'],
+  ol[role='list'] {
+	list-style: none;
+  }
 
-header {
-  background-color: var(--theme);
-  min-height: calc(var(--line-h)*3);
-}
-
-a {
-  text-decoration:none;
-}
-
-a:visited {
-  color: inherit;
-}
-
-p {
-  line-height: var(--line-h);
-  max-width: 60em;
-  margin: var(--line-h) 0;
-}
-
-p a {
-  color: var(--text);
-  text-decoration: underline;
-  text-decoration-thickness: from-font;
-  cursor: pointer;
-}
-
-p a:visited {
-  color: var(--text-70);
-}
-
-p a:hover {
-  text-decoration: underline;
-  color: var(--accent);
-  text-decoration-color: var(--accent);
-  text-decoration-thickness: initial;
-}
-
-nav {
-  justify-content: flex-end;
-}
-
-ul {
-  padding: 0;
-}
-
-nav li {
-  display: grid;
-  place-items: center;
-  padding: 0.5em;
-}
-
-.active {
-  font-size: 1.1em;
-}
-
-nav li:not(.logo, .button, .active):hover, .active {
-  border-block-end: solid var(--accent);
-}
+  /* Set core root defaults */
+  html:focus-within {
+	scroll-behavior: smooth;
+  }
 
 
-hr {
-  margin-block-end: calc(var(--line-h)*3);
-  border:unset;
-}
+  html {
+	background-color: var(--bg-color);
+  }
 
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
+  @media print {
+	body > *:not(main), .button {
+	  display: none;
+	}
+  }
 
-main * + * {
-  margin-block-start: var(--line-h);
-}
-li, dt, dd, br, th, td {
-  margin-block-start: 0;
-}
+  body {
+	min-height: 100vh;
+	margin:0;
+	color: var(--text);
+	font-family: system-ui, sans-serif;
+	font-size: var(--font-size);
+	letter-spacing: var(--letter-spacing);
+  } 
+
+  body > * {
+	width: 100%;
+  }
+
+  header {
+	background-color: var(--theme);
+	min-height: calc(var(--line-h)*3);
+  }
+
+  a {
+	text-decoration:none;
+  }
+
+  a:visited {
+	color: inherit;
+  }
+
+  h1 {
+	font-size: 3em;
+  }
+
+  h2 {
+	font-size: 2em;
+  }
+
+  h3 {
+	font-size: 1.5em;
+  }
+
+  h4 {
+	font-size: 1.25em;
+  }
+
+  h1, h2, h3, h4 {
+	margin-block-start: 2em;
+	margin-block-end: 1em;
+  }
+
+  p {
+	max-width: 60em;
+	margin: var(--line-h) 0;
+	word-spacing: var(--letter-spacing);
+  }
+
+  p a {
+	color: var(--text);
+	text-decoration: underline;
+	text-decoration-thickness: from-font;
+	cursor: pointer;
+  }
+
+  p a:visited {
+	color: var(--text-70);
+  }
+
+  p a:hover {
+	text-decoration: underline;
+	color: var(--accent);
+	text-decoration-color: var(--accent);
+	text-decoration-thickness: initial;
+  }
+
+  nav {
+	justify-content: flex-end;
+  }
+
+  ul {
+	padding: 0;
+  }
+
+  nav li {
+	display: grid;
+	place-items: center;
+	padding: 0.5em;
+  }
+
+  .active {
+	font-size: 1.1em;
+  }
+
+  nav li:not(.logo, .button, .active):hover, .active {
+	border-block-end: solid var(--accent);
+  }
+
+
+  hr {
+	margin-block-end: calc(var(--line-h)*3);
+	border:unset;
+  }
+
+  img,
+  picture {
+	max-width: 100%;
+	display: block;
+  }
+
+  main * + * {
+	margin-block-start: var(--line-h);
+  }
+  li, dt, dd, br, th, td {
+	margin-block-start: 0;
+  }
 
 * + h2, * + h3, * + h4 {
   margin-block-start: var(--line-h);
