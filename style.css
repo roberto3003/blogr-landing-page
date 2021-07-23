@@ -68,7 +68,7 @@ body > * {
 
 header {
   background-color: var(--theme);
-  height: calc(var(--line-h)*3);
+  min-height: calc(var(--line-h)*3);
 }
 
 a:visited {
@@ -372,12 +372,9 @@ right: 100%;
 }
 
 .main-nav {
-  height: calc(var(--line-h)*2);
+  min-height: calc(var(--line-h)*2);
   align-items: center;
-}
-
-.logo {
-  margin-inline-end: auto;
+  gap: 0;
 }
 
 .logo .img {
@@ -392,7 +389,7 @@ right: 100%;
   gap: 1em;
 }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 30em) {
   .main-nav  .links  {
 	flex-direction: column;
   }
