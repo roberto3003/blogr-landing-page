@@ -118,7 +118,7 @@ nav li {
   font-size: 1.1em;
 }
 
-nav li:not(.logo .button, .active):hover, .active {
+nav li:not(.logo, .button, .active):hover, .active {
   border-block-end: solid var(--accent);
 }
 
