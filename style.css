@@ -223,7 +223,7 @@ section, .section  {
 }
 
 
-.cont {
+.container {
   width: 80%; 
   min-width: 320px;
   margin: 0 auto;
