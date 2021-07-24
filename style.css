@@ -157,7 +157,7 @@ a {
   text-decoration:none;
 }
 
-a:visited {
+a:visited, a:active {
   color: inherit;
 }
 
